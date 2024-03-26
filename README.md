@@ -13,5 +13,10 @@ did not have significant relations on total factor productivity, with the except
 expenditures on health and the judiciary, but which had relatively small correlations.
 
 # The problem
-The main reasoning behind this research is that, while there is some evidence about how the TFP behaves in regards to public expenditure, the evidences for the correlations between the TFP and public expenditure by function in state level analysis are very limited or nonexistent, at least for the brazilian case. In this regard, our main interest revolved around estimating this relation, while the method for TFP calculation needed some workarounds. Some concessions regarding data availabity had to be done as well.
+The main reasoning behind this research is that, while there is some evidence about how the TFP behaves in regards to public expenditure, the evidences for the correlations between the TFP and public expenditure by function in state-level analysis are very limited or nonexistent, at least for the brazilian case. In this regard, our main interest revolved around estimating this relation, while the method for TFP calculation needed some workarounds. Some concessions regarding data availabity had to be made as well.
 
+
+# TFP calculation
+
+Notice how I talk about calculation and not estimation, that's deliberate. We used as reference Ferreira (2010) "Eficiência e Produtividade Total dos Fatores em
+Minas Gerais", where the author used the perpetual inventory method for the calculation. The Capital series is estimated through recursive methods, Human Capital 
