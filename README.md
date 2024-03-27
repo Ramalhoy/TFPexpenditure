@@ -76,4 +76,14 @@ dev.off()
 <img src="ptf monografia.jpg">
 
 
-# 4. 
+# 5. Estimating the relation between TPF and public expenditure
+
+The `plm` package was of utmost importance for this project. Most of the code is a variation of the following: 
+
+```
+plm(log(ptf) ~ log(despesa)  + educ + log(IMPORT) + log(agua) + log(energiapc)+ log(popdens) + log(vak),   # repeat for every expenditure
+           data=dados,
+           effect = "twoways",
+           model = "within")
+
+```
