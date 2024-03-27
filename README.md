@@ -18,12 +18,21 @@ The main reasoning behind this research is that, while there is some evidence ab
 # 3. Data manipulation
 
 A long panel data was used with information from all brazilian states (except Distrito Federal, since there's a considerable lack of data), including control variables. 
-The few cases of missing data that we encountered where solved using interpolation. We also used a deflator for every variable that appeared in monetary terms, using the 'sidrar' package in R. 
+The few cases of missing data that we encountered where solved using interpolation through the `imputeTS` package. We also used a deflator for every variable that appeared in monetary terms, using the `sidrar` package in R. 
+The general aspects of the codes used for both cases can be seen on the files "interpolação.R" and "deflac.R", respectivelly. 
+
 
 # 4. TFP calculation
 
 Notice how we talk about calculation instead of estimation - that's deliberate. Cavalcanti Ferreira's article entitled "Eficiência e Produtividade Total dos Fatores em
 Minas Gerais" was used as reference, where the author used the perpetual inventory method instead of using statistical methods for TFP estimation. The Capital series is calculated through recursive methods, Human Capital is given as a mincerian function, therefore getting the inputs was an easy task.
+Besides the TFP presented, we also tested for:
+
+1. Use a proxy for the TFP, in this case the energy consumption in GWh for each state - the results not very consistent in this case;
+2. Use a minmax methodology for the data already used, which resulted in very similar estimations;
+3. Also very similar, we tried to calculate the TFP with other specifications for the same variables (for example, GDP and not GDP _per worker_.
+
+As shown below, the graphs are in conformity with what the literature says about the subject and the time period considered.   
 
 <img src="ptf monografia.jpg">
 
