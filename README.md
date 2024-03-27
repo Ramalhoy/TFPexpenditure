@@ -1,4 +1,4 @@
-# Total factor productivity and public spending of Brazilian states: a panel data applications
+# Total factor productivity and public spending of Brazilian states: a panel data application
 
 
 # Abstract
@@ -18,5 +18,5 @@ The main reasoning behind this research is that, while there is some evidence ab
 
 # TFP calculation
 
-Notice how I talk about calculation and not estimation, that's deliberate. We used as reference Ferreira (2010) "Eficiência e Produtividade Total dos Fatores em
-Minas Gerais", where the author used the perpetual inventory method for the calculation. The Capital series is estimated through recursive methods, Human Capital 
+Notice how we talk about calculation instead of estimation - that's deliberate. Cavalcanti Ferreira's article entitled "Eficiência e Produtividade Total dos Fatores em
+Minas Gerais" was used as reference, where the author used the perpetual inventory method instead of using statistical methods for TFP estimation. The Capital series is calculated through recursive methods, Human Capital is given as a mincerian function, therefore getting the inputs was an easy task.. 
