@@ -18,7 +18,28 @@ The main reasoning behind this research is that, while there is some evidence ab
 # 3. Data manipulation
 
 A long panel data was used with information from all brazilian states (except Distrito Federal, since there's a considerable lack of data), including control variables. 
-The few cases of missing data that we encountered where solved using interpolation through the `imputeTS` package. We also used a deflator for every variable that appeared in monetary terms, using the `sidrar` package in R. 
+The few cases of missing data that we encountered where solved using interpolation through the `imputeTS` package. 
+
+```
+#Linear Interpolation
+
+df <- estado %>%
+  mutate(despesa = na.approx(despesa))   # where 'despesa' is any expenditure used
+
+write_xlsx(df,"filepath") 
+
+```
+
+We also used a deflator for every variable that appeared in monetary terms, using the `sidrar` package in R. 
+
+```
+ipca = get_sidra(IPCA, api = '/t/1737/n1/all/v/2265/p/200312,200412,200512,200612,200712,200812,200912,201012,201112,201212,201312,201412,201512,201612,201712,201812/d/v2265%202')
+
+ipca %<>% mutate(date = parse_date_time(`Mês (Código)`, 'ym'))
+
+```
+
+
 The general aspects of the codes used for both cases can be seen on the files "interpolação.R" and "deflac.R", respectivelly. 
 
 
