@@ -34,7 +34,8 @@ Besides the TFP presented, we also tested for:
 
 As shown below, the graphs are in conformity with what the literature says about the subject and the time period considered.   
 
-`tiff("test.tiff", units="in", width=12, height=8, res=300)
+```
+tiff("test.tiff", units="in", width=12, height=8, res=300)
 describe_panel_by_year  <- summary(data, ptf, by.wave = FALSE, by.id = TRUE)
 describe_panel_by_year %>% 
   kable() %>%
@@ -48,7 +49,8 @@ data %>%
             overlay = FALSE,
             add.mean = TRUE)
 dev.off()
-`
+
+```
 
 <img src="ptf monografia.jpg">
 
