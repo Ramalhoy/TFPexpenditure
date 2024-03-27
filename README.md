@@ -87,3 +87,5 @@ plm(log(ptf) ~ log(despesa)  + educ + log(IMPORT) + log(agua) + log(energiapc)+ 
            model = "within")
 
 ```
+
+There was also an effort to use lagged variables or creating indexes, but there was a lack of variability between the results. 
