@@ -23,7 +23,7 @@ View(data)
 glimpse(data)
 
 
-#gr·ficos das ptfs
+#gr√°ficos das ptfs
 
 tiff("test.tiff", units="in", width=12, height=8, res=300)
 describe_panel_by_year  <- summary(data, ptf, by.wave = FALSE, by.id = TRUE)
@@ -46,19 +46,6 @@ dev.off()
 
 
 
-
-describe_panel_by_year  <- summary(data, minmax, by.wave = FALSE, by.id = TRUE)
-describe_panel_by_year %>% 
-  kable() %>%
-  kable_styling()
-
-data %>% 
-  line_plot(minmax)
-
-data %>% 
-  line_plot(minmax, 
-            overlay = FALSE,
-            add.mean = TRUE)
 
 
 
