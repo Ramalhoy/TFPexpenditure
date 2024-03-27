@@ -30,9 +30,25 @@ Besides the TFP presented, we also tested for:
 
 1. Use a proxy for the TFP, in this case the energy consumption in GWh for each state - the results not very consistent in this case;
 2. Use a minmax methodology for the data already used, which resulted in very similar estimations;
-3. Also very similar, we tried to calculate the TFP with other specifications for the same variables (for example, GDP and not GDP _per worker_.
+3. Also very similar, we tried to calculate the TFP with other specifications for the same variables (for example, GDP and not GDP _per worker_).
 
 As shown below, the graphs are in conformity with what the literature says about the subject and the time period considered.   
+
+`tiff("test.tiff", units="in", width=12, height=8, res=300)
+describe_panel_by_year  <- summary(data, ptf, by.wave = FALSE, by.id = TRUE)
+describe_panel_by_year %>% 
+  kable() %>%
+  kable_styling()
+
+data %>% 
+  line_plot(ptf)
+
+data %>% 
+  line_plot(ptf, 
+            overlay = FALSE,
+            add.mean = TRUE)
+dev.off()
+`
 
 <img src="ptf monografia.jpg">
 
