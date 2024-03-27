@@ -21,7 +21,7 @@ The main reasoning behind this research is that, while there is some evidence ab
 Notice how we talk about calculation instead of estimation - that's deliberate. Cavalcanti Ferreira's article entitled "Eficiência e Produtividade Total dos Fatores em
 Minas Gerais" was used as reference, where the author used the perpetual inventory method instead of using statistical methods for TFP estimation. The Capital series is calculated through recursive methods, Human Capital is given as a mincerian function, therefore getting the inputs was an easy task.
 
-<img src="test.tiff">
+<img src="ptf monografia.jpg">
 
 
 # 4. 
